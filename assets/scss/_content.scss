@@ -1,0 +1,170 @@
+.home__container {
+    padding: 3.5rem 5rem;
+}
+
+.home__title {
+	font-weight: normal;
+    text-align: center;
+    margin-top: 0;
+}
+
+.home__kostList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+ * List Item
+ */
+
+.home__kostList-item {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
+
+.home__kostList-item {
+    padding: 1rem;
+}
+
+//image
+.home__kostList-img {
+	position: relative;
+}
+
+.home__kostList-img-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.home__kostList-img-nav svg {
+	width: 30px;
+	fill: $white;
+}
+
+.home__kostList-img-gallery {
+    position: relative;
+}
+
+.flickity-prev-next-button {
+    background: transparent;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+
+.flickity-button:hover {
+    background: transparent;
+    opacity: .95;
+}
+
+// info
+.home__kostList-info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: $orange;
+    color: $white;
+    padding: .5rem;
+    transition: $transition;
+}
+
+.home__kostList-item:hover .home__kostList-info {
+    transform: translateY(-40px);
+}
+
+.home__kostList-info-tag {
+    display: block;
+}
+
+.home__kostList-info-location, 
+.home__kostList-info-price {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 1rem;
+}
+
+.home__kostList-info-price {
+    text-align: right;
+}
+
+.home__kostList-info-vacant {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.home__kostList-info-tag--vacant {
+    display: inline;
+}
+
+.home__kostList-info-arrow {
+    position: absolute;
+    top: -23px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.home__kostList-info-arrow svg {
+    width: 75%;
+    fill: $orange;
+}
+
+// content
+.home__kostList-content {
+	position: relative;
+	font-size: .8rem;
+    background-color: #efefef;
+    margin-top: -40px;
+    padding: .8rem .5rem;
+}
+
+.home__kostList-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home__kostList-content-name, 
+.home__kostList-content-type-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.home__kostList-content-type {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home__kostList-content-type-text {
+    margin-right: 5px;
+}
+
+// meta
+.home__kostList-meta {
+	display: flex;
+	padding: .5rem;
+    background: #cccccc;    
+}
+
+// button more
+.home__kost-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home__kost-more-link {
+    display: inline-block;
+    width: 200px;
+    padding: .65rem 0;
+    text-decoration: none;
+    color: $white;
+    background: $green;
+    border-radius: 5px;
+    font-weight: bold;
+}
